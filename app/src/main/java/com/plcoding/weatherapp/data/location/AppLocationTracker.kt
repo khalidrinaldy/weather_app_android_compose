@@ -9,9 +9,11 @@ import android.location.LocationManager
 import androidx.core.content.ContextCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.plcoding.weatherapp.domain.location.LocationTracker
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 
+@ExperimentalCoroutinesApi
 class AppLocationTracker(
     private val locationClient: FusedLocationProviderClient,
     private val application: Application,
